@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return <>
-  <nav className="navbar navbar-expand-lg bg-light">
+  <nav className="navbar navbar-expand-lg ">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/Home">Navbar</Link>
+    <Link className="navbar-brand" to="/Home">
+      <img className='w-50' src={require("../../imges/logo.png")} alt="" />
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
